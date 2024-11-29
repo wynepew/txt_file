@@ -3,6 +3,7 @@ with open("./find_full_name", "a") as file:
         full_name = input("Enter your name: ")
 
         file.write(f"Full Name: {full_name}\n")
+        file.write("-" * 60 + "\n")
 
         add_name = input("\nDo you want to enter another name? (yes/no): ")
         if add_name != "yes":
@@ -11,5 +12,8 @@ with open("./find_full_name", "a") as file:
             break
 
 with open("./find_full_name", "r") as file:
-    print(file.readlines())
+    lines = (file.readlines())
+    for line in lines:
+        print(line)
+
 
