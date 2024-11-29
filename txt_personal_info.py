@@ -11,6 +11,7 @@ with open("./collected_info.txt", "a") as file:
         file.write(f"Birthday: {birthday}\n")  
         file.write(f"Email Address: {email_address}\n")
         file.write(f"Phone Number: {phone_number}\n")
+        file.write("-" * 60 + "\n")
 
         add_person = input("\nDo you want to enter another info for a new person? (yes/no): ")
         if add_person != "yes":
